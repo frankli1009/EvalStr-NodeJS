@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/main.css')
+    script(type='text/javascript' src='/javascripts/jquery.min.js')
+  body
+    h1.text-center= title
+    p.text-center Welcome to #{title}
+    form#data.hidden
+      input#exptype.hidden(type='hidden', name='exptype', value='Integer Operands')
+    br
+    div.container-fluid
+      div.row
+        div.col-sm-4.col-md-4.col-lg-4
+          include navigator
+        div.col-sm-8.col-md-8.col-lg-8
+          block content
+    

@@ -1,0 +1,14 @@
+ul.nav#nav
+  each name, index in ["Integer Operands", "Float Operands"]
+    li
+      if index === 0
+        a.focused(href="",data-exptype=name) #{name}
+      else
+        a(href="",data-exptype=name) #{name}
+
+div
+  br
+  p
+    a: img(id='navImage' height='200' width='200' src='')
+
+script(type='text/javascript' src='/javascripts/navigator/navigator.js')

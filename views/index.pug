@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  form#evalform(method='POST' action='/evaluate')
+    div.form-group
+      label(for='expression') Expression:
+      input#expression.form-control(type='text', placeholder='expression to be evaluated', name='expression')
+    button.btn.btn-primary(type='submit') Evaluate
+    div#loading.hidden
+      img(src='images/loading.gif')
+    div#resgroup.form-group.hidden.morevspace
+      label(for='result') Result:
+      input#result.form-control.readonly(type='text', name='result')
+
+  
+  script(type='text/javascript' src='/javascripts/index/function-index.js')

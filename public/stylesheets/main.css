@@ -1,0 +1,22 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+a.focused {
+    background-color: #eee;
+}
+
+.morevspace {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.error {
+    color: #ff0000;
+    font-weight: 600;
+}
